@@ -21,6 +21,10 @@ app.get('/template', function (req, res) {
       res.sendFile(path.join(__dirname, 'ui', 'template.html'));
 });
 
+app.get('/template11', function (req, res) {
+      res.sendFile(path.join(__dirname, 'ui', 'template11.html'));
+});
+
 app.get('/article-two', function (req, res) {
       res.sendFile(path.join(__dirname, 'ui' , 'article-two.html'));
 });
