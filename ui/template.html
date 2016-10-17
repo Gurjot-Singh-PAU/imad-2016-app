@@ -4,7 +4,13 @@
 <script type="text/javascript">
 	function x()
 	{
-	document.getElementById("y").innerHTML="Thanks for clicking me..!";
+	var testInput=document.getElementById("name").value;
+	    if(testInput.length==0)
+	        {
+	        document.getElementById("y").innerHTML="Hey You typed nothing..!"
+	        }
+        else
+            document.getElementById("y").innerHTML=testInput;
 	}
 </script>
 	<title>Button Test</title>
@@ -12,6 +18,7 @@
 </head>
 
 <body>
+<input id="name" type="text/">
 <button onClick="x();">Click Me</button>
 <p id="y"></p>
 </body>
